@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chooserecipe">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layoutPicture"
+            android:layout_width="match_parent"
+            android:layout_height="242dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp">
+
+
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layoutName"
+            android:layout_width="match_parent"
+
+            android:layout_height="700dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="@dimen/cardview_default_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="CHOOSE RECIPES"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:src="@drawable/pork"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:onClick="chicken"
+                    android:text="Chicken Recipe"
+                    android:textSize="30dp"
+
+
+
+                    />
+
+                <Button
+                    android:text="vegetables recipe"
+                    android:textSize="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:onClick="vegetables" />
+
+                <Button
+                    android:text="Pork Recipe"
+                    android:textSize="30dp"
+                    android:onClick="pork"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <Button
+                    android:text="Beef Recipe"
+                    android:textSize="30dp"
+                    android:onClick="beef"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
